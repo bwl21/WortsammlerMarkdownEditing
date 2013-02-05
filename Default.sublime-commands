@@ -7,7 +7,7 @@
         "caption": "Preferences: MarkdownEditing Settings – Default",
         "command": "open_file", "args":
         {
-            "file": "${packages}/MarkdownEditing/Markdown.sublime-settings"
+            "file": "${packages}/WortsammlerMarkdownEditing/Markdown.sublime-settings"
         }
     },
     {

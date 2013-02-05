@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+
+-   [${1:reqtag}] **${2:titel}** { 
+     ${3:text}}(${4:uptrace})
+     
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>req</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

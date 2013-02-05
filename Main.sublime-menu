@@ -1,48 +1,47 @@
 [
-    {
-        "caption": "Preferences",
-        "mnemonic": "n",
-        "id": "preferences",
+    {   
+        "id": "wortsammler",
+        "caption": "Wortsammler",
         "children":
         [
             {
-                "caption": "Package Settings",
-                "mnemonic": "P",
-                "id": "package-settings",
+                "caption": "Pandoc Academic",
                 "children":
                 [
                     {
-                        "caption": "Markdown Editing",
+                        "caption": "Pandoc Convert",
                         "children":
                         [
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/MarkdownEditing/README.md"},
-                                "caption": "README"
-                            },
-                            { "caption": "-" },
-                            {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/MarkdownEditing/Markdown.sublime-settings"},
-                                "caption": "Markdown Settings – Default"
+                                "caption": "Convert Pandoc to HTML",
+                                "command": "pandoc_convertor",
+                                "args":{"target":"html"}
                             },
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/Markdown.sublime-settings"},
-                                "caption": "Markdown Settings – User"
-                            },
-                            { "caption": "-" },
-                            {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/MarkdownEditing/MultiMarkdown.sublime-settings"},
-                                "caption": "MultiMarkdown Settings – Default"
+                                "caption": "Convert Pandoc to DocX",
+                                "command": "pandoc_convertor",
+                                "args":{"target":"docx"}
                             },
                             {
-                                "command": "open_file",
-                                "args": {"file": "${packages}/User/MultiMarkdown.sublime-settings"},
-                                "caption": "MultiMarkdown Settings – User"
+                                "caption": "Convert Pandoc to PDF",
+                                "command": "pandoc_convertor",
+                                "args":{"target":"pdf"}
                             },
-                            { "caption": "-" }
+                            {
+                                "caption": "Convert Pandoc to Beamer",
+                                "command": "pandoc_convertor",
+                                "args":{"target":"beamer"}
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Pandoc Table",
+                        "children":
+                        [
+                            {
+                                "caption": "Pandoc Table",
+                                "command": "pandoc_table"
+                            }
                         ]
                     }
                 ]
